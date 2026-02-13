@@ -36,7 +36,7 @@ Este proyecto implementa operaciones CRUD utilizando Hibernate ORM con Panache p
 ## 👨‍💻 Creador
 
 **Franklim de Jesús Muñoz**
-##Postman
+## Code.
 ![java](./photo2.png)
 ## 🚦 Requisitos Previos
 
