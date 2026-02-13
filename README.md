@@ -12,6 +12,8 @@
 
 Este proyecto implementa operaciones CRUD utilizando Hibernate ORM con Panache para la capa de persistencia y REST Jackson para la serialización JSON, proporcionando una API RESTful completa y eficiente.
 
+## Postman
+![Postman](./photo1.png)
 ## ✨ Características
 
 - ✅ API RESTful para operaciones CRUD
@@ -21,6 +23,7 @@ Este proyecto implementa operaciones CRUD utilizando Hibernate ORM con Panache p
 - ✅ Empaquetado como JAR tradicional o über-jar
 - ✅ Compilación nativa para rendimiento óptimo
 - ✅ Dev UI para monitoreo y pruebas
+
 
 ## 🛠️ Tecnologías Utilizadas
 
@@ -33,7 +36,8 @@ Este proyecto implementa operaciones CRUD utilizando Hibernate ORM con Panache p
 ## 👨‍💻 Creador
 
 **Franklim de Jesús Muñoz**
-
+##Postman
+![java](./photo2.png)
 ## 🚦 Requisitos Previos
 
 - Java 11 o superior
