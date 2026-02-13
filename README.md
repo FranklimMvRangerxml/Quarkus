@@ -1,70 +1,49 @@
-# crud-Quarks
+# 🚀 crud-Quarks
 
-This project uses Quarkus, the Supersonic Subatomic Java Framework.
+![Java](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=java&logoColor=white)
+![Quarkus](https://img.shields.io/badge/Quarkus-4695EB?style=for-the-badge&logo=quarkus&logoColor=white)
+![Hibernate](https://img.shields.io/badge/Hibernate-59666C?style=for-the-badge&logo=hibernate&logoColor=white)
+![REST](https://img.shields.io/badge/REST-02569B?style=for-the-badge&logo=rest&logoColor=white)
+![Jackson](https://img.shields.io/badge/Jackson-000000?style=for-the-badge&logo=json&logoColor=white)
 
-If you want to learn more about Quarkus, please visit its website: https://quarkus.io/ .
+## 📋 Descripción
 
-## Running the application in dev mode
+**crud-Quarks** es una aplicación CRUD (Crear, Leer, Actualizar, Eliminar) desarrollada con **Quarkus**, el framework Java nativo de Kubernetes que permite crear aplicaciones cloud-native con un rendimiento excepcional y un tiempo de inicio ultrarrápido.
 
-You can run your application in dev mode that enables live coding using:
+Este proyecto implementa operaciones CRUD utilizando Hibernate ORM con Panache para la capa de persistencia y REST Jackson para la serialización JSON, proporcionando una API RESTful completa y eficiente.
+
+## ✨ Características
+
+- ✅ API RESTful para operaciones CRUD
+- ✅ Persistencia con Hibernate ORM y Panache
+- ✅ Serialización JSON con Jackson
+- ✅ Modo de desarrollo con recarga en caliente
+- ✅ Empaquetado como JAR tradicional o über-jar
+- ✅ Compilación nativa para rendimiento óptimo
+- ✅ Dev UI para monitoreo y pruebas
+
+## 🛠️ Tecnologías Utilizadas
+
+- **Quarkus** - Framework principal
+- **Java** - Lenguaje de programación
+- **Hibernate ORM con Panache** - Capa de persistencia
+- **REST Jackson** - Serialización JSON
+- **Maven** - Gestión de dependencias
+
+## 👨‍💻 Creador
+
+**Franklim de Jesús Muñoz**
+
+## 🚦 Requisitos Previos
+
+- Java 11 o superior
+- Maven 3.8.1 o superior
+- GraalVM (opcional, para compilación nativa)
+- Docker (opcional, para compilación nativa en contenedor)
+
+## 📦 Instalación y Ejecución
+
+### Modo Desarrollo
+
 ```shell script
 ./mvnw compile quarkus:dev
-```
-
-> **_NOTE:_**  Quarkus now ships with a Dev UI, which is available in dev mode only at http://localhost:8080/q/dev/.
-
-## Packaging and running the application
-
-The application can be packaged using:
-```shell script
-./mvnw package
-```
-It produces the `quarkus-run.jar` file in the `target/quarkus-app/` directory.
-Be aware that it’s not an _über-jar_ as the dependencies are copied into the `target/quarkus-app/lib/` directory.
-
-The application is now runnable using `java -jar target/quarkus-app/quarkus-run.jar`.
-
-If you want to build an _über-jar_, execute the following command:
-```shell script
-./mvnw package -Dquarkus.package.type=uber-jar
-```
-
-The application, packaged as an _über-jar_, is now runnable using `java -jar target/*-runner.jar`.
-
-## Creating a native executable
-
-You can create a native executable using: 
-```shell script
-./mvnw package -Dnative
-```
-
-Or, if you don't have GraalVM installed, you can run the native executable build in a container using: 
-```shell script
-./mvnw package -Dnative -Dquarkus.native.container-build=true
-```
-
-You can then execute your native executable with: `./target/crud-Quarks-1.0.0-SNAPSHOT-runner`
-
-If you want to learn more about building native executables, please consult https://quarkus.io/guides/maven-tooling.
-
-## Related Guides
-
-- Hibernate ORM with Panache ([guide](https://quarkus.io/guides/hibernate-orm-panache)): Simplify your persistence code for Hibernate ORM via the active record or the repository pattern
-- REST Jackson ([guide](https://quarkus.io/guides/rest#json-serialisation)): Jackson serialization support for Quarkus REST. This extension is not compatible with the quarkus-resteasy extension, or any of the extensions that depend on it
-
-## Provided Code
-
-### Hibernate ORM
-
-Create your first JPA entity
-
-[Related guide section...](https://quarkus.io/guides/hibernate-orm)
-
-[Related Hibernate with Panache section...](https://quarkus.io/guides/hibernate-orm-panache)
-
-
-### REST
-
-Easily start your REST Web Services
-
-[Related guide section...](https://quarkus.io/guides/getting-started-reactive#reactive-jax-rs-resources)
